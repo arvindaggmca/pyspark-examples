@@ -15,3 +15,4 @@ df2 = spark.createDataFrame(data = data2, schema = ["id","name"])
 
 df2.filter(df2.name.like("%rose%")).show()
 df2.filter(df2.name.rlike("(?i)^*rose$")).show()
+df2.filter(df2.name.like("%rose1%")).show()
